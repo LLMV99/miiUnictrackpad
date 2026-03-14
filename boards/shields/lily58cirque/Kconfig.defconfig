@@ -7,7 +7,11 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config I2C
+	default y
 
+config ZMK_POINTING
+    default y
 
 endif
 
@@ -16,10 +20,13 @@ if SHIELD_LILY58CIRQUE_RIGHT || SHIELD_LILY58CIRQUE_LEFT
 config ZMK_SPLIT
     default y
 
-config I2C
+
+endif
+
+if SHIELD_LILY58CIRQUE_LEFT
+
+config SPI
 	default y
 
-config ZMK_POINTING
-    default y
 
 endif
