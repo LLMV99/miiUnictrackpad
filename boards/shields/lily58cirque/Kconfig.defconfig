@@ -1,8 +1,8 @@
-if SHIELD_MIIUNIC_RIGHT
+if SHIELD_LILY58CIRQUE_RIGHT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "miiUnic"
+    default "Lily58Cirque"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -11,7 +11,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_MIIUNIC_RIGHT || SHIELD_MIIUNIC_LEFT
+if SHIELD_LILY58CIRQUE_RIGHT || SHIELD_LILY58CIRQUE_LEFT
 
 config ZMK_SPLIT
     default y
